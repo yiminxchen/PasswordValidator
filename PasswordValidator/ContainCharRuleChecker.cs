@@ -11,9 +11,9 @@ namespace PasswordValidator
         private IPasswordRuleChecker _nextRule;
         private readonly string _containChar;
 
-        public ContainCharRuleChecker(string vowels)
+        public ContainCharRuleChecker(string containChar)
         {
-            _containChar = vowels;
+            _containChar = containChar;
         }
 
         public ValidationStatus CheckRule(string password)
